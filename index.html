@@ -3089,6 +3089,30 @@ fjs.parentNode.insertBefore(js, fjs);
 
     </section>
 
+    <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeszLJqsvOTVy300wbJcAEFI2ZT2N3mgQ&sensor=false">
+</script>
+
+
+<script type="text/javascript">
+    (function(){
+        var latlng = new google.maps.LatLng(35.892101, 128.610770);
+
+        var mapOptions = {
+            center: latlng,
+            zoom: 16
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: 'KNU OB'
+        });
+    })();
+    </script>
+
+
+
     <section class="cta text-center" style="padding:0; background-color:white;">
     	<div class="container" style="padding-top:30px;">
 		<div class="fb-comments" data-href="http://minchang.github.io/knupr" data-numposts="10" data-colorscheme="light"></div>
@@ -3175,28 +3199,6 @@ fjs.parentNode.insertBefore(js, fjs);
     <script src="./Prestige   Home_files/less-1.6.1.min.js"></script>
 
     
-<script type="text/javascript"
-        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeszLJqsvOTVy300wbJcAEFI2ZT2N3mgQ&sensor=FALSE">
-</script>
-
-
-<script type="text/javascript">
-    (function(){
-        var latlng = new google.maps.LatLng(35.892101, 128.610770);
-
-        var mapOptions = {
-            center: latlng,
-            zoom: 16
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-        var marker = new google.maps.Marker({
-            position: latlng,
-            map: map,
-            title: 'KNU OB'
-        });
-    })();
-    </script>
-
     <script>
 
       $(document).ready(function(){
